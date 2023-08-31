@@ -10,7 +10,8 @@ async function exampleGETRequest (e) {
         const testText = await test.text();
         console.log(testText);
         // Change the h1 element text to testText:
-
+        const h1 = document.querySelector("#test");
+        h1.append("cheese");
 
     } catch (e) {
         console.log(e);
